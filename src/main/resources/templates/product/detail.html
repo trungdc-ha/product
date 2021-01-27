@@ -27,7 +27,7 @@
             <form th:action="@{/cart/add/}" class="form-inline push-bit text-right" method="post">
                 <input type="hidden" th:value="${product.id}" name="id">
                 <button type="submit" class="btn btn-danger">Add to Cart</button>
-                <a href="/product" class="btn btn-info ml-3">Shopping</a>
+                <a th:href="@{/}" class="btn btn-info ml-3">Shopping</a>
             </form>
         </div>
     </div>
