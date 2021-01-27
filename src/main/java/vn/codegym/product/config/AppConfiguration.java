@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /*thay the cho file dispatcher-servlet.xml*/
 @Configuration
-@EnableWebMvc
 public class AppConfiguration extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/css/**").addResourceLocations("WEB-INF/css/");
