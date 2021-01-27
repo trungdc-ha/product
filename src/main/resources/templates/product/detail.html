@@ -8,7 +8,7 @@
 <div class="container bootstrap snippets bootdey">
     <div class="row">
         <div class="col-sm-6 push-bit">
-            <a href="#" class="gallery-link"><img th:src="${product.image}" th:alt="${product.name}" class="img-responsive push-bit" /></a>
+            <a href="#" class="gallery-link"><img th:src="@{'/img/'+${product.image}}" th:alt="${product.name}" class="img-responsive push-bit" /></a>
         </div>
         <div class="col-sm-6 push-bit">
             <div class="clearfix">
